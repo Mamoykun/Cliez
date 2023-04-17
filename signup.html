@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cliez</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fashion-105-285434.png">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand nav navbar-nav pull-sm-left" href="#">Cliez</a>
+        <ul class="navbar-nav nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Discount Sell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Best selling</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">New Brand</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Glasses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Man Clothes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Woman Clothes</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav nav pull-sm-right">
+            <nav class="navbar navbar-light bg-white">
+            </nav>
+            <li class="nav-item">
+                    <a class="nav-link" href="#"  data-toggle="modal" data-target="#pencarian"> <i class="fas fa-search"></i></a>
+    
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html"> <i class="fas fa-user"></i></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html"> <i class="fas fa-shopping-cart"></i>
+                </a>
+
+            </li>
+
+            </li>
+        </ul>
+    </nav>
+
+    <section class="mt-5">
+        <div class="container text-center">
+            <!-- title dari list -->
+            <div class="row text-left border-bottom mb-3 pb-3">
+                <div class="col-md-6">
+                    <h5 class="text-center text-secondary mb-4">New User</h5>
+                    <p>Have not account yet? <a href="signup.html">Sign up here</a></p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="username">Full name</label>
+                            <input type="text" class="form-control rounded-0" id="username" name="username"
+                                placeholder="type your fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control rounded-0" id="email" name="username"
+                                placeholder="type your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control rounded-0" id="username" name="username"
+                                placeholder="type your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">New Password</label>
+                            <input type="password" class="form-control rounded-0" id="password" name="password"
+                                placeholder="type your password">
+                        </div>
+                        <a href="login.html">You Have account Sign in Here?</a>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success rounded-0 mr-1 px-3">
+                                <i class="fa fa-check mr-1"></i>Login
+                            </button>
+
+                            <button type="submit" class="btn btn-outline-danger rounded-0 mr-1 px-3">
+                                <i class="fa fa-times mr-1"></i> Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#">About Hanger</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Our Designer</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#">Delivery</a>
+                            <a href="#">privacy policy</a>
+                            <a href="#">Payment Methods</a>
+                            <a href="#">Return &amp; Exchange</a>
+                            <a href="#">Terms &amp; conditions</a>
+                        </div>
+                        <div class="col-md-6" text-right>
+                            <form action="">
+                                <input type="text" placeholder="Email Address">
+                                <input type="submit" value=Subscribe>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 pl-0 pt-4 social">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 pr-0 pt-4 text-right">
+                            ICON PAYMENT METHOD
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            &copy; 2019 CliezID Powered by Cliez developer
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="modal fade" id="pencarian"  tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <form action="#"method="get" class="modal-content">
+                           <input type="text" placeholder="found your product here">
+                           <button type="submit">
+                               <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                    </div>
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

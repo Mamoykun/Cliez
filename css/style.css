@@ -1,0 +1,443 @@
+body {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2em;
+    color: #333;
+
+}
+a,
+a:link,
+a:visited {
+    color: #888;
+    transition: all 0.2s linear;
+}
+
+a:hover {
+    color: #000;
+}
+
+
+.highlight > div {
+    height: 260px;
+    overflow: hidden;
+}
+
+.highlight > div:hover > .caption {
+    opacity: 1;
+}
+
+.highlight img,
+.product img {
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+}
+
+.highlight .caption {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+    letter-spacing: 1px;
+} 
+
+.product .caption {
+    text-align: center;
+    padding: 15px 4px;
+}
+.product .caption h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+
+}
+
+.product .caption p {
+    font-size: 1.05em;
+    color: #555;;
+}
+
+.price:before {
+    content: "Rp. ";
+}
+
+.price::after {
+    content: ",- ";
+}
+
+.link-all,
+.link-all:link,
+.link-all:visited {
+    display: inline-block;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #999;
+    padding: 0 25px;
+    transform: skew(-25deg);
+}
+
+.link-all :hover{
+    border-color: #222;
+}
+
+.link-all > span {
+    display: inline-block;
+    transform: skew(25deg);
+}
+
+footer {
+    background: #f5f5f5;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+
+}
+
+footer .col-md-3 a {
+    display: block;
+    margin-bottom: 5px;
+
+} 
+
+footer input {
+    height: 40px;
+    padding: 0 10px;
+    border: solid 1px #ccc;
+    width: 75%;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all .2s linear;
+}
+
+footer input:focus {
+    border-color: #666;
+}
+
+footer input[type='submit'] {
+    width: 22%;
+    color: #fff;
+    border-color: #f76c6c;
+    background: #f43a3a;
+    letter-spacing: 1px;
+}
+footer input[type='submit']:hover{
+    border-color: #d35959;
+    background: #d12f2f;
+}
+
+footer .container > .row:nth-child(2)::before {
+    content: " ";
+    background: #CCC;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+}
+
+footer .container > .row:nth-child(2) {
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
+.social a {
+    font-size: 1.4em;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* style for detail */
+.rating {
+    font-size: 15px;
+    color: #ffc107;
+}
+
+.review {
+    font-size: 1.5;
+}
+
+.wrap-option {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.wrap-option > div {
+    width: 100%;
+}
+
+.wrap-option .wrap-size {
+    padding: 0px 8px;
+}
+
+.wrap-option label {
+    display: block;
+    margin: 0;
+    font-size: 0.9em;
+
+
+}
+
+.wrap-option select,
+.wrap-option input {
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    outline: 0;
+    border: solid 1px #888;
+    transition: all 0.2s linear;
+}
+
+.wrap-option select:focus,
+.wrap-option input:focus {
+    border:solid 1px #333;
+}
+
+/* style for cart */
+
+.cart-list {
+    border-bottom: solid 1px #f2f2f2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-list img {
+    height: 8em;
+    object-fit: cover;
+}
+.cart-list h2 {
+    font-size: 1.5em;
+   
+}
+
+.cart-list p {
+    font-size: 1em;
+    margin-bottom:5px;
+    color: #555;
+}
+
+.cart-list input {
+    border: solid 1px #ccc;
+    text-align: center;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+    width: 4em;
+    outline: 0;
+    transition: all .2s linear;
+}
+
+.cart-list input:hover,
+.cart-list input:focus {
+    border-color: #222;
+}
+
+.cart-list .btn-remove {
+    padding: 3px 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    border-radius: 0;
+}
+
+
+
+.wrap {
+    margin-bottom: 15px;
+}
+
+.wrap + h4 {
+    text-decoration: line-through;
+    color: #d00000;
+}
+
+.wrap input {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    border: solid 1px #ccc;
+    outline:0;
+    margin-right: 4px;
+    border-radius: 0;
+}
+
+.wrap input:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.2rem #17a2b850;
+}
+
+.wrap input[ type='submit'] {
+    position: relative;
+    top: -1px;
+
+}
+
+/* Style for account */
+.account {
+    border-top: solid 1px #eee;
+    padding-top: 20px
+}
+
+.account .col-md-8 {
+    text-align: left;
+}
+
+.account small {
+    display: block;
+    color:#999;
+    margin-bottom: 10px;
+    margin-top:30px;
+}
+
+.account h2 {
+    margin:0;
+}
+
+.account h2 small {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+
+}
+
+.account span {
+    font-size: 1.10em;
+    color: #666;
+    float: left;
+    width: 20%;
+}
+
+.account span + p {
+    font-size:1.10em;
+}
+
+.account span + p:before{
+    content: ":";
+    margin-right: 10px;
+    color: #888;
+}
+
+.wrap-contact .btn {
+    border-radius: 0;
+    margin-right: 3px;
+    border-width: 0;
+}
+
+/* checkout */
+
+.left{
+    float: left;
+    width: 55%;
+    background: #fff;
+    border-right: solid 1px #ddd;
+
+}
+
+.right{
+    float: right;
+    width: 45%;
+    height: 100vh;
+    
+}
+
+.left .container{
+    padding: 3em 2em 3em 6em;
+}
+
+.right .container{
+    padding:3em 6em 3em 2em;
+}
+.right .cart-list > div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.right .cart-list img {
+    height: 4em;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+
+.right .cart-list span {
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    background: #666;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* style pencarian modal */
+
+#pencarian form {
+    overflow: hidden;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#pencarian form input {
+    width: 80%;
+    height: 60px;
+    display: inline-block;
+    padding: 0 20px;
+    border: 0;
+    outline: 0;
+    letter-spacing: 1px;
+}
+
+#pencarian form button {
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    background: #2c87f0;
+    border: 0;
+    color:#fff;
+    font-size: 22px;
+    transition: all .2s linear;
+}
+
+#pencarian form button:hover {
+    background: #2579d9;
+}
+
+/* custom bootstrap */
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-caption {
+    width: 100%;
+    background: linear-gradient(to top, #000000EE -40%, #FFFFFF00 100%);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 40px;
+    color: whitesmoke;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    border: 0;
+    margin: 0 5px 5px;
+}
+
+a.col-md-3:hover {
+    text-decoration: none;
+    transform: translateY(-10px);
+}
